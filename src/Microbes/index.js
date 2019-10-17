@@ -118,11 +118,8 @@ export default class Microbes {
 	 * @param {number} высота микроба
 	*/
 	setMicrobeCoordinates = () => {
-		let firsts = this.checkMicrobesQuantity() < 2;
 		let maxTop = this.petriDish.offsetHeight - this.microbeHeight;
 		let maxLeft = this.petriDish.offsetWidth - this.microbeWidth;
-
-		firsts && (maxTop = window.innerHeight * 1);
 
 		let top = this.random(0, maxTop);
 		let left = this.random(0, maxLeft);
